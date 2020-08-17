@@ -52,6 +52,7 @@
 	<preference name="orientation" value="portrait" />
 	<preference name="android-build-tool" value="gradle" />
 	<preference name="android-targetSdkVersion" value="28" />
+	<preference name="AutoHideSplashScreen" value="true" />
 <!-- 	<preference name="swift-version" value="3.0"/>
 	<preference name="UseLegacySwiftLanguageVersion" value="true" /> -->
 	
@@ -153,10 +154,10 @@
 		<icon src="www/res/icon/ios/icon-small@2x.png" width="58" height="58" />
 		<icon src="www/res/icon/ios/icon-small@3x.png" width="87" height="87" />
 		<!-- iPad Spotlight and Settings Icon -->
-		<icon src="www/res/icon/icons/ios/icon-50.png" width="50" height="50" />
-		<icon src="www/res/icon/icons/ios/icon-50@2x.png" width="100" height="100" />
+		<icon src="www/res/icon/ios/icon-50.png" width="50" height="50" />
+		<icon src="www/res/icon/ios/icon-50@2x.png" width="100" height="100" />
 		<!-- iPad Pro -->
-		<icon src="www/res/icon/icons/ios/icon-83.5@2x.png" width="167" height="167" />
+		<icon src="www/res/icon/ios/icon-83.5@2x.png" width="167" height="167" />
 
 		<!-- Storyboard method (supports all devices):
 			Important: If you use the storyboard method, legacy images are copied but ignored.
