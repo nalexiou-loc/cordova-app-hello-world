@@ -54,6 +54,7 @@
 	<preference name="android-targetSdkVersion" value="29" />
 	<preference name="AutoHideSplashScreen" value="true" />
 <!-- 	<preference name="swift-version" value="3.0"/>
+	
 	<preference name="UseLegacySwiftLanguageVersion" value="true" /> -->
 	<preference name="scheme" value="app" />
 	<preference name="hostname" value="localhost" />
@@ -70,6 +71,7 @@
 	<plugin name="phonegap-plugin-barcodescanner" spec="7.1.0" />
 	<plugin name="cordova-plugin-inappbrowser" spec="https://github.com/nalexiou-loc/cordova-plugin-inappbrowser" />
 	<plugin name="cordova-plugin-fingerprint-aio" spec="2.0.0"/>
+
 <!-- 	<plugin name="cordova-plugin-wkwebview-engine" spec="1.2.1" /> -->
 <!-- 	<plugin name="phonegap-plugin-push" spec="2.2.3" /> -->
 
@@ -112,7 +114,8 @@
 	</platform>
 
 	<platform name="ios">
-		
+		<preference name="UseSwiftLanguageVersion" value="5" />
+		<plugin name="cordova-plugin-add-swift-support" spec="2.0.2"/>
 		<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
 			<string>This allows uploading pictures from photo library and sharing it with the store.</string>
 		</edit-config>
