@@ -32,7 +32,7 @@
 		LOC Team
 	</author>
 
-	<feature name="http://api.phonegap.com/1.0/device" />
+<!-- 	<feature name="http://api.phonegap.com/1.0/device" /> -->
 
 	<preference name="cordova-version" value="cli-10.0.0" />
 	<preference name="permissions" value="none" />
@@ -55,6 +55,8 @@
 	<preference name="AutoHideSplashScreen" value="true" />
 <!-- 	<preference name="swift-version" value="3.0"/>
 	<preference name="UseLegacySwiftLanguageVersion" value="true" /> -->
+	<preference name="scheme" value="app" />
+	<preference name="hostname" value="localhost" />
 	
 	<plugin name="cordova-android-support-gradle-release" spec="3.0.1" />
 	<plugin name="cordova-plugin-statusbar" spec="2.4.3" />
@@ -68,7 +70,7 @@
 	<plugin name="phonegap-plugin-barcodescanner" spec="7.1.0" />
 	<plugin name="cordova-plugin-inappbrowser" spec="https://github.com/nalexiou-loc/cordova-plugin-inappbrowser" />
 	<plugin name="cordova-plugin-fingerprint-aio" spec="2.0.0"/>
-	<plugin name="cordova-plugin-wkwebview-engine" spec="1.2.1" />
+<!-- 	<plugin name="cordova-plugin-wkwebview-engine" spec="1.2.1" /> -->
 <!-- 	<plugin name="phonegap-plugin-push" spec="2.2.3" /> -->
 
 	<!--  used to define a single default icon which will be used for all platforms. -->
@@ -110,12 +112,7 @@
 	</platform>
 
 	<platform name="ios">
-		<feature name="CDVWKWebViewEngine">
-			<param name="ios-package" value="CDVWKWebViewEngine" />
-		</feature>
-		<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
-		<preference name="WKWebViewOnly" value="true" />
-
+		
 		<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
 			<string>This allows uploading pictures from photo library and sharing it with the store.</string>
 		</edit-config>
@@ -177,5 +174,7 @@
 	<access origin="*" />
 	<allow-intent href="*" />
 	<allow-navigation href="*" />
+	
+	
 
 </widget>
