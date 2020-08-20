@@ -23,7 +23,7 @@
 	android-versionCode="35080"
 	ios-CFBundleVersion="3.50.8.1"
 	xmlns="http://www.w3.org/ns/widgets" 
-	xmlns:gap="http://phonegap.com/ns/1.0">
+	xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	<name>LOC Software mStore</name>
 	<description>
 		This application is designed to work with LOC Store Management Suite only. It allows navigate items and building shopping lists on the store server.
