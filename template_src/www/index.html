@@ -57,7 +57,12 @@
         document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() {
         setTimeout(function() { navigator.splashscreen.hide(); }, 2000);
-            StatusBar.styleDefault();
+            if (cordova.platformId == 'android') {
+                StatusBar.styleLightContent();
+                StatusBar.backgroundColorByHexString('#000');
+            else {
+                StatusBar.styleDefault();
+            }       
         }
     </script>
 </body>
