@@ -111,7 +111,6 @@
 
 	<platform name="ios">
 		<preference name="AutoHideSplashScreen" value="false" />
-		<preference name="StatusBarStyle" value="blackopaque" />
 		<preference name="UseSwiftLanguageVersion" value="5" />
 		<plugin name="cordova-plugin-add-swift-support" spec="2.0.2"/>
 		<preference name="deployment-target" value="13.0.0" />
