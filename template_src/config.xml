@@ -43,8 +43,7 @@
 	<preference name="stay-in-webview" value="false" />
 	<preference name="detect-data-types" value="true" />
 	<preference name="exit-on-suspend" value="false" />
-	<preference name="show-splash-screen-spinner" value="true" />
-	<preference name="auto-hide-splash-screen" value="true" />
+	
 	<preference name="disable-cursor" value="false" />
 	<preference name="android-minSdkVersion" value="22" />
 	<preference name="android-installLocation" value="auto" />
@@ -52,7 +51,7 @@
 	<preference name="orientation" value="portrait" />
 	<preference name="android-build-tool" value="gradle" />
 	<preference name="android-targetSdkVersion" value="29" />
-	<preference name="AutoHideSplashScreen" value="true" />
+	
 	<preference name="scheme" value="app" />
 	<preference name="hostname" value="localhost" />
 	
@@ -75,6 +74,7 @@
 	<splash src="www/res/splash.png" />
 
 	<platform name="android">
+		<preference name="AutoHideSplashScreen" value="true" />
 <!-- 		<resource-file src="google-services.json" target="app/google-services.json" /> -->
 		<!--
 			ldpi    : 36x36 px
@@ -109,6 +109,8 @@
 	</platform>
 
 	<platform name="ios">
+		<preference name="AutoHideSplashScreen" value="false" />
+		<preference name="StatusBarStyle" value="blackopaque" />
 		<preference name="UseSwiftLanguageVersion" value="5" />
 		<plugin name="cordova-plugin-add-swift-support" spec="2.0.2"/>
 		<preference name="deployment-target" value="13.0.0" />
